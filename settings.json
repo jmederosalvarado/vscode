@@ -141,7 +141,7 @@
   // Neovim {{{
 
   // "nvscode-neovim.neovimClean": true,
-  "vscode-neovim.NVIM_APPNAME": "vscode-nvim",
+  "vscode-neovim.NVIM_APPNAME": "vscode",
 
   // Neovim }}}
 
