@@ -1,0 +1,32 @@
+:root {
+    --monaco-monospace-font: 'Iosevka', monospace;
+    --font-family: 'Iosevka', -apple-system, BlinkMacSystemFont, sans-serif;
+    --editor-font-family: 'Iosevka', Consolas, 'Courier New', monospace;
+}
+
+body.mac {
+    --monaco-monospace-font: 'Iosevka', Monaco, Menlo, Courier, monospace !important;
+}
+
+body,
+.monaco-workbench,
+.monaco-workbench input:not(.monaco-text-button),
+.monaco-workbench textarea {
+    font-family: 'Iosevka', -apple-system, BlinkMacSystemFont, sans-serif !important;
+}
+
+.monaco-editor,
+.monaco-editor .inputarea,
+.monaco-editor .monaco-editor-background,
+.monaco-editor .margin,
+.monaco-workbench .part.editor > .content .editor-group-container > .title .title-label > a {
+    font-family: var(--monaco-monospace-font) !important;
+}
+
+.monaco-editor,
+.monaco-editor .inputarea,
+.monaco-editor .monaco-editor-background,
+.monaco-editor .margin,
+.monaco-workbench .part.editor > .content .editor-group-container > .title .title-label > a {
+    font-family: 'Iosevka', Consolas, 'Courier New', monospace !important;
+}

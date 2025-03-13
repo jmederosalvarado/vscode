@@ -1,0 +1,328 @@
+[
+  // Terminal
+  {
+    "key": "ctrl+;",
+    "command": "extension.multiCommand.execute",
+    "args": {
+      "sequence": [
+        "workbench.action.focusActiveEditorGroup",
+        "workbench.action.closePanel"
+      ]
+    },
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+;",
+    "command": "workbench.action.terminal.focus",
+    "when": "editorTextFocus && neovim.mode == 'normal'"
+  },
+  {
+    "key": "ctrl+;",
+    "command": "workbench.action.terminal.focus",
+    "when": "!terminalFocus && !editorTextFocus"
+  },
+
+  // Harpoon
+  {
+    "key": "ctrl+a",
+    "command": "vscode-harpoon.addEditor",
+    "when": "editorTextFocus && neovim.mode == 'normal'"
+  },
+  {
+    "key": "cmd+e",
+    "command": "vscode-harpoon.editEditors"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "vscode-harpoon.gotoEditor1",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "vscode-harpoon.gotoEditor2",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "vscode-harpoon.gotoEditor3",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "vscode-harpoon.gotoEditor4",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "ctrl+f",
+    "command": "vscode-harpoon.editorQuickPick",
+    "when": "editorTextFocus && neovim.mode == 'normal'"
+  },
+  {
+    "key": "ctrl+f",
+    "command": "vscode-harpoon.editorQuickPick",
+    "when": "!editorTextFocus && !terminalFocus"
+  },
+
+  {
+    "key": "ctrl+space",
+    "command": "workbench.action.quickOpen",
+    "when": "editorTextFocus && neovim.mode == 'normal'"
+  },
+  {
+    "key": "ctrl+space",
+    "command": "workbench.action.quickOpen",
+    "when": "!editorTextFocus"
+  },
+
+  {
+    "key": "ctrl+n",
+    "command": "workbench.files.action.focusFilesExplorer",
+    "when": "editorTextFocus && neovim.mode == 'normal'"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "extension.multiCommand.execute",
+    "args": {
+      "sequence": [
+        "workbench.action.focusActiveEditorGroup",
+        "workbench.action.closeSidebar"
+      ]
+    },
+    "when": "sideBarFocus"
+  },
+
+  {
+    "key": "ctrl+y",
+    "command": "acceptSelectedSuggestion",
+    "when": "suggestWidgetVisible && suggestWidgetHasFocusedSuggestion && textInputFocus"
+  },
+  {
+    "key": "ctrl+y",
+    "command": "acceptSelectedCodeAction",
+    "when": "codeActionMenuVisible"
+  },
+
+  {
+    "key": "ctrl+.",
+    "command": "editor.action.quickFix",
+    "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly && neovim.mode == 'normal'"
+  },
+
+  // Better window switching
+
+  {
+    "key": "ctrl+w ctrl+k",
+    "command": "workbench.action.navigateUp",
+    "when": "!editorTextFocus && !terminalFocus && neovim.mode != 'cmdline'"
+  },
+  {
+    "key": "ctrl+w ctrl+j",
+    "command": "workbench.action.navigateDown",
+    "when": "!editorTextFocus && !terminalFocus && neovim.mode != 'cmdline'"
+  },
+  {
+    "key": "ctrl+w ctrl+h",
+    "command": "workbench.action.navigateLeft",
+    "when": "!editorTextFocus && !terminalFocus && neovim.mode != 'cmdline'"
+  },
+  {
+    "key": "ctrl+w ctrl+l",
+    "command": "workbench.action.navigateRight",
+    "when": "!editorTextFocus && !terminalFocus && neovim.mode != 'cmdline'"
+  },
+
+  // Better scroll
+  {
+    "key": "ctrl+d",
+    "command": "vscode-neovim.send",
+    "args": "5jzz",
+    "when": "editorTextFocus && neovim.ctrlKeysNormal.d && neovim.init && neovim.mode != 'insert' && editorLangId not in 'neovim.editorLangIdExclusions'"
+  },
+  {
+    "key": "ctrl+u",
+    "command": "vscode-neovim.send",
+    "args": "5kzz",
+    "when": "editorTextFocus && neovim.ctrlKeysNormal.u && neovim.init && neovim.mode != 'insert' && editorLangId not in 'neovim.editorLangIdExclusions'"
+  },
+
+  // Make integrated terminal behave like tmux
+  {
+    "key": "ctrl+a a",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+a ctrl+a",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+a d",
+    "command": "workbench.action.terminal.toggleTerminal",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+a ctrl+d",
+    "command": "workbench.action.terminal.toggleTerminal",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+a w",
+    "command": "workbench.action.quickOpenTerm",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+a ctrl+w",
+    "command": "workbench.action.quickOpenTerm",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+a z",
+    "command": "workbench.action.toggleMaximizedPanel",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+a ctrl+z",
+    "command": "workbench.action.toggleMaximizedPanel",
+    "when": "terminalFocus"
+  },
+
+  // Windows
+  {
+    "key": "ctrl+a c",
+    "command": "workbench.action.terminal.newInActiveWorkspace",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+a ctrl+c",
+    "command": "workbench.action.terminal.newInActiveWorkspace",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+a n",
+    "command": "workbench.action.terminal.focusNext",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+a ctrl+n",
+    "command": "workbench.action.terminal.focusNext",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+a p",
+    "command": "workbench.action.terminal.focusPrevious",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+a ctrl+p",
+    "command": "workbench.action.terminal.focusPrevious",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+a 1",
+    "command": "workbench.action.terminal.focusAtIndex1",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+a 2",
+    "command": "workbench.action.terminal.focusAtIndex2",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+a 3",
+    "command": "workbench.action.terminal.focusAtIndex3",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+a 4",
+    "command": "workbench.action.terminal.focusAtIndex4",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+a 5",
+    "command": "workbench.action.terminal.focusAtIndex5",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+a 6",
+    "command": "workbench.action.terminal.focusAtIndex6",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+a 7",
+    "command": "workbench.action.terminal.focusAtIndex7",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+a 8",
+    "command": "workbench.action.terminal.focusAtIndex8",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+a 9",
+    "command": "workbench.action.terminal.focusAtIndex9",
+    "when": "terminalFocus"
+  },
+
+  // Panes
+  {
+    "key": "ctrl+a x",
+    "command": "workbench.action.terminal.kill",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+a ctrl+x",
+    "command": "workbench.action.terminal.kill",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+a v",
+    "command": "workbench.action.terminal.split",
+    "when": "terminalFocus && panelPosition == 'bottom'"
+  },
+  {
+    "key": "ctrl+a s",
+    "command": "workbench.action.terminal.split",
+    "when": "terminalFocus && panelPosition != 'bottom'"
+  },
+  {
+    "key": "ctrl+a l",
+    "command": "workbench.action.terminal.focusNextPane",
+    "when": "terminalFocus && panelPosition == 'bottom'"
+  },
+  {
+    "key": "ctrl+a ctrl+l",
+    "command": "workbench.action.terminal.focusNextPane",
+    "when": "terminalFocus && panelPosition == 'bottom'"
+  },
+  {
+    "key": "ctrl+a h",
+    "command": "workbench.action.terminal.focusPreviousPane",
+    "when": "terminalFocus && panelPosition == 'bottom'"
+  },
+  {
+    "key": "ctrl+a ctrl+h",
+    "command": "workbench.action.terminal.focusPreviousPane",
+    "when": "terminalFocus && panelPosition == 'bottom'"
+  },
+  {
+    "key": "ctrl+a j",
+    "command": "workbench.action.terminal.focusNextPane",
+    "when": "terminalFocus && panelPosition != 'bottom'"
+  },
+  {
+    "key": "ctrl+a ctrl+j",
+    "command": "workbench.action.terminal.focusNextPane",
+    "when": "terminalFocus && panelPosition != 'bottom'"
+  },
+  {
+    "key": "ctrl+a k",
+    "command": "workbench.action.terminal.focusPreviousPane",
+    "when": "terminalFocus && panelPosition != 'bottom'"
+  },
+  {
+    "key": "ctrl+a ctrl+k",
+    "command": "workbench.action.terminal.focusPreviousPane",
+    "when": "terminalFocus && panelPosition != 'bottom'"
+  }
+]

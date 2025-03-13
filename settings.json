@@ -1,0 +1,238 @@
+{
+  // General {{{
+
+  "workbench.startupEditor": "welcomePageInEmptyWorkbench",
+
+  // Fonts
+
+  // "editor.fontSize": 13,
+  // "terminal.integrated.fontSize": 13,
+  // "editor.fontFamily": "JetBrainsMono Nerd Font",
+  // "terminal.integrated.fontFamily": "Jetbrains Mono Nerd Font",
+
+  "editor.fontSize": 14,
+  "terminal.integrated.fontSize": 14,
+  "editor.fontFamily": "Iosevka",
+  "terminal.integrated.fontFamily": "Iosevka Term",
+
+  "editor.fontLigatures": true,
+  "terminal.integrated.fontLigatures.enabled": true,
+
+  "workbench.activityBar.location": "top",
+
+  // }}}
+
+  // Editor {{{
+
+  "editor.smoothScrolling": true,
+  "editor.cursorSmoothCaretAnimation": "on",
+
+  "editor.wordWrap": "on",
+  "editor.lineNumbers": "relative",
+  "editor.renderWhitespace": "trailing",
+
+  "window.commandCenter": false,
+  "editor.minimap.enabled": false,
+  "editor.guides.bracketPairs": true,
+
+  "terminal.integrated.shellIntegration.decorationsEnabled": "overviewRuler",
+
+  // "errorLens.enabled": true,
+  // "errorLens.enabledDiagnosticLevels": ["error", "warning"],
+  // "errorLens.removeLinebreaks": true,
+  // "errorLens.replaceLinebreaksSymbol": " ⏎ ",
+
+  // Editor }}}
+
+  // Git {{{
+
+  "git.blame.editorDecoration.enabled": true,
+
+  // Git }}}
+
+  // Languages {{{
+
+  // C#
+  // "[csharp]": {
+  //   "editor.formatOnType": true
+  // },
+  // "dotnet.completion.showCompletionItemsFromUnimportedNamespaces": true,
+  // "csharp.semanticHighlighting.enabled": true,
+  // "dotnet.backgroundAnalysis.compilerDiagnosticsScope": "fullSolution",
+
+  // Rust
+  // "[rust]": {
+  //   // "editor.formatOnSave": true,
+  //   "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  // },
+  // "rust-analyzer.check.command": "clippy",
+  // "rust-analyzer.check.allTargets": true,
+  // "rust-analyzer.rustfmt.rangeFormatting.enable": true,
+
+  // Go
+  // "[go]": {
+  //   // "editor.formatOnSave": true,
+  //   "editor.defaultFormatter": "golang.go",
+  //   "editor.codeActionsOnSave": {
+  //     "source.organizeImports": "explicit"
+  //   }
+  // },
+  // "go.toolsManagement.autoUpdate": true,
+  // "gopls": {
+  //   "formatting.gofumpt": false,
+  //   "ui.semanticTokens": true,
+  //   "ui.codelenses": {
+  //     "test": true,
+  //     "generate": true
+  //   },
+  //   "ui.diagnostic.staticcheck": true
+  // },
+
+  // Zig
+  // "zig.initialSetupDone": true,
+  // "zig.path": "/Users/jmederos/Library/Application Support/Code/User/globalStorage/ziglang.vscode-zig/zig_install/zig",
+  // "zig.path": "/Users/jmederos/Library/Application Support/Code/User/globalStorage/ziglang.vscode-zig/zig_install/zig",
+  // "zig.path": "zig",
+  // "zig.zls.path": "/Users/jmederos/Library/Application Support/Code/User/globalStorage/ziglang.vscode-zig/zls_install/zls",
+  // "zig.zls.path": "/Users/jmederos/Library/Application Support/Code/User/globalStorage/ziglang.vscode-zig/zls_install/zls",
+  // "zig.zls.path": "zls",
+  // "zig.buildOnSave": true,
+  // "zig.zls.enableBuildOnSave": true,
+
+  // Lua
+  // "[lua]": {
+  //   "editor.defaultFormatter": "JohnnyMorganz.stylua"
+  // },
+
+  // Others - Web and Misc.
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "vscode_custom_css.statusbar": true,
+  "vscode_custom_css.imports": [
+    "file:///Users/jmederos/.config/vscode/vscode.css"
+    // "https://gist.githubusercontent.com/jmederosalvarado/d53780b2f9c07230b382a17e9f9cef1a/raw/03bb2580340007da7a48941af2ed065ca624f334/vscode.css"
+  ],
+
+  // Customization }}}
+
+  // Neovim {{{
+
+  // "nvscode-neovim.neovimClean": true,
+  "vscode-neovim.NVIM_APPNAME": "vscode-nvim",
+
+  // Neovim }}}
+
+  // Misc {{{
+
+  "json.maxItemsComputed": 1000000000,
+  "terminal.integrated.scrollback": 1000000000,
+
+  // Misc }}}
+
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+
+  // Copilot {{{
+
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "extensions.ignoreRecommendations": true,
+
+  // Copilot }}}
+
+  // Colors {{{
+
+  "workbench.colorTheme": "Catppuccin Macchiato",
+  "workbench.iconTheme": "catppuccin-macchiato",
+
+  "catppuccin.customUIColors": {
+    "all": {
+      "titleBar.activeBackground": "base",
+      "titleBar.inactiveBackground": "base",
+    }
+  },
+  "catppuccin.accentColor": "blue",
+  "catppuccin.colorOverrides": {
+    "latte": {
+      "base": "#d0d6e3",
+      "crust": "#bfc7d7",
+      "mantle": "#c8cfde",
+      "overlay0": "#898fa3",
+      "overlay1": "#7c7f96",
+      "overlay2": "#6e7189",
+      "subtext0": "#60637a",
+      "subtext1": "#52556d",
+      "surface0": "#b2b9ca",
+      "surface1": "#a5abbd",
+      "surface2": "#979db0",
+      "text": "#444761"
+    },
+    "mocha": {
+      "base": "#20242a",
+      "crust": "#121418",
+      "mantle": "#191c22",
+      "overlay0": "#7d8591",
+      "overlay1": "#919eae",
+      "overlay2": "#a9b7c7",
+      "subtext0": "#c2cedd",
+      "subtext1": "#dee7f1",
+      "surface0": "#363c41",
+      "surface1": "#4e545e",
+      "surface2": "#656c77",
+      "text": "#fdfeff"
+    },
+    "macchiato": {
+      "base": "#282c34",
+      "crust": "#1a1c21",
+      "mantle": "#21242a",
+      "overlay0": "#7c828e",
+      "overlay1": "#8f98a7",
+      "overlay2": "#a5aebe",
+      "subtext0": "#bac3d2",
+      "subtext1": "#d1d9e6",
+      "surface0": "#3c414a",
+      "surface1": "#525761",
+      "surface2": "#666c77",
+      "text": "#e9eef7"
+    },
+    "frappe": {
+      "base": "#30353e",
+      "crust": "#23272e",
+      "mantle": "#292d35",
+      "overlay0": "#727a88",
+      "overlay1": "#818b9d",
+      "overlay2": "#8f9db4",
+      "subtext0": "#a0aec7",
+      "subtext1": "#afc0db",
+      "surface0": "#414650",
+      "surface1": "#515763",
+      "surface2": "#626875",
+      "text": "#c0d1ed"
+    }
+  }
+
+  //}}}
+}

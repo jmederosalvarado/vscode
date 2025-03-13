@@ -1,0 +1,18 @@
+:root {
+  --font-family: "Iosevka Term";
+  --monaco-monospace-font: "Iosevka Term";
+  font-family: "Iosevka Term" !important;
+}
+
+.mac {
+  font-family: var(--font-family) !important;
+  --monaco-monospace-font: "Iosevka Term" !important;
+}
+
+body,
+input,
+textarea,
+button {
+  font-family: var(--font-family) !important;
+  --monaco-monospace-font: "Iosevka Term" !important;
+}
