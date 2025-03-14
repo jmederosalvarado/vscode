@@ -53,40 +53,41 @@
   // Languages {{{
 
   // C#
-  // "[csharp]": {
-  //   "editor.formatOnType": true
-  // },
-  // "dotnet.completion.showCompletionItemsFromUnimportedNamespaces": true,
-  // "csharp.semanticHighlighting.enabled": true,
-  // "dotnet.backgroundAnalysis.compilerDiagnosticsScope": "fullSolution",
+  "[csharp]": {
+    "editor.formatOnType": true
+  },
+  "dotnet.completion.showCompletionItemsFromUnimportedNamespaces": true,
+  "csharp.semanticHighlighting.enabled": true,
+  "dotnet.backgroundAnalysis.compilerDiagnosticsScope": "fullSolution",
+  "dotnet.automaticallyCreateSolutionInWorkspace": false,
 
   // Rust
-  // "[rust]": {
-  //   // "editor.formatOnSave": true,
-  //   "editor.defaultFormatter": "rust-lang.rust-analyzer"
-  // },
-  // "rust-analyzer.check.command": "clippy",
-  // "rust-analyzer.check.allTargets": true,
-  // "rust-analyzer.rustfmt.rangeFormatting.enable": true,
+  "[rust]": {
+    // "editor.formatOnSave": true,
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
+  "rust-analyzer.check.command": "clippy",
+  "rust-analyzer.check.allTargets": true,
+  "rust-analyzer.rustfmt.rangeFormatting.enable": true,
 
   // Go
-  // "[go]": {
-  //   // "editor.formatOnSave": true,
-  //   "editor.defaultFormatter": "golang.go",
-  //   "editor.codeActionsOnSave": {
-  //     "source.organizeImports": "explicit"
-  //   }
-  // },
-  // "go.toolsManagement.autoUpdate": true,
-  // "gopls": {
-  //   "formatting.gofumpt": false,
-  //   "ui.semanticTokens": true,
-  //   "ui.codelenses": {
-  //     "test": true,
-  //     "generate": true
-  //   },
-  //   "ui.diagnostic.staticcheck": true
-  // },
+  "[go]": {
+    // "editor.formatOnSave": true,
+    "editor.defaultFormatter": "golang.go",
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+  },
+  "go.toolsManagement.autoUpdate": true,
+  "gopls": {
+    "formatting.gofumpt": false,
+    "ui.semanticTokens": true,
+    "ui.codelenses": {
+      "test": true,
+      "generate": true
+    },
+    "ui.diagnostic.staticcheck": true
+  },
 
   // Zig
   // "zig.initialSetupDone": true,
@@ -168,10 +169,13 @@
   "workbench.colorTheme": "Catppuccin Macchiato",
   "workbench.iconTheme": "catppuccin-macchiato",
 
+  // "catppuccin.extraBordersEnabled": true,
+  "catppuccin.italicKeywords": false,
   "catppuccin.customUIColors": {
     "all": {
       "titleBar.activeBackground": "base",
       "titleBar.inactiveBackground": "base",
+      "sideBar.border": "surface0"
     }
   },
   "catppuccin.accentColor": "blue",
