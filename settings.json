@@ -36,6 +36,7 @@
   "editor.guides.bracketPairs": true,
 
   "terminal.integrated.shellIntegration.decorationsEnabled": "overviewRuler",
+  "terminal.integrated.defaultProfile.osx": "fish",
 
   // "errorLens.enabled": true,
   // "errorLens.enabledDiagnosticLevels": ["error", "warning"],
@@ -160,83 +161,131 @@
   // Copilot {{{
 
   "github.copilot.nextEditSuggestions.enabled": true,
+  "github.copilot.chat.codesearch.enabled": true,
   "extensions.ignoreRecommendations": true,
 
   // Copilot }}}
 
   // Colors {{{
 
-  "workbench.colorTheme": "Catppuccin Macchiato",
-  "workbench.iconTheme": "catppuccin-macchiato",
+  "workbench.colorTheme": "Catppuccin Mocha",
+  "workbench.iconTheme": "catppuccin-mocha",
 
-  // "catppuccin.extraBordersEnabled": true,
+  "catppuccin.extraBordersEnabled": true,
+  "catppuccin.workbenchMode": "flat",
   "catppuccin.italicKeywords": false,
   "catppuccin.customUIColors": {
     "all": {
       "titleBar.activeBackground": "base",
       "titleBar.inactiveBackground": "base",
-      "sideBar.border": "surface0"
+      // "sideBar.border": "surface0"
+      "input.background": "base",
+      "input.foreground": "text"
     }
   },
   "catppuccin.accentColor": "blue",
   "catppuccin.colorOverrides": {
     "latte": {
       "base": "#d0d6e3",
-      "crust": "#bfc7d7",
       "mantle": "#c8cfde",
+      "crust": "#bfc7d7",
+      "surface0": "#b2b9ca",
+      "surface1": "#a5abbd",
+      "surface2": "#979db0",
       "overlay0": "#898fa3",
       "overlay1": "#7c7f96",
       "overlay2": "#6e7189",
       "subtext0": "#60637a",
       "subtext1": "#52556d",
-      "surface0": "#b2b9ca",
-      "surface1": "#a5abbd",
-      "surface2": "#979db0",
       "text": "#444761"
     },
     "mocha": {
-      "base": "#20242a",
-      "crust": "#121418",
-      "mantle": "#191c22",
-      "overlay0": "#7d8591",
-      "overlay1": "#919eae",
-      "overlay2": "#a9b7c7",
-      "subtext0": "#c2cedd",
-      "subtext1": "#dee7f1",
-      "surface0": "#363c41",
-      "surface1": "#4e545e",
-      "surface2": "#656c77",
-      "text": "#fdfeff"
+      // saturated ghostty
+      //   "base": "#20242a",
+      //   "mantle": "#191c22",
+      //   "crust": "#121418",
+      //   "surface0": "#363c41",
+      //   "surface1": "#4e545e",
+      //   "surface2": "#656c77",
+      //   "overlay0": "#7d8591",
+      //   "overlay1": "#919eae",
+      //   "overlay2": "#a9b7c7",
+      //   "subtext0": "#c2cedd",
+      //   "subtext1": "#dee7f1",
+      //   "text": "#fdfeff",
+
+      // saturated 5
+      // "base": "#1d1e1f",
+      // "crust": "#101112",
+      // "mantle": "#171819",
+      // "overlay0": "#66686a",
+      // "overlay1": "#777a7d",
+      // "overlay2": "#898d91",
+      // "subtext0": "#999fa6",
+      // "subtext1": "#abb2bb",
+      // "surface0": "#2f3031",
+      // "surface1": "#414345",
+      // "surface2": "#535557",
+      // "text": "#bbc4cf",
+
+      // saturated 7
+      "base": "#1d1e20",
+      "crust": "#101112",
+      "mantle": "#17181a",
+      "overlay0": "#65686b",
+      "overlay1": "#767a7f",
+      "overlay2": "#888d93",
+      "subtext0": "#979fa9",
+      "subtext1": "#a8b2bf",
+      "surface0": "#2e3031",
+      "surface1": "#414345",
+      "surface2": "#535558",
+      "text": "#b8c5d4"
+
+      // saturated 10
+      // "base": "#1c1e21",
+      // "crust": "#101113",
+      // "mantle": "#17181a",
+      // "overlay0": "#64686d",
+      // "overlay1": "#757a81",
+      // "overlay2": "#868d96",
+      // "subtext0": "#94a0ad",
+      // "subtext1": "#a4b3c4",
+      // "surface0": "#2e3032",
+      // "surface1": "#404347",
+      // "surface2": "#525559",
+      // "text": "#b2c5db"
     },
     "macchiato": {
       "base": "#282c34",
-      "crust": "#1a1c21",
       "mantle": "#21242a",
+      "crust": "#1a1c21",
+      "surface0": "#3c414a",
+      "surface1": "#525761",
+      "surface2": "#666c77",
       "overlay0": "#7c828e",
       "overlay1": "#8f98a7",
       "overlay2": "#a5aebe",
       "subtext0": "#bac3d2",
       "subtext1": "#d1d9e6",
-      "surface0": "#3c414a",
-      "surface1": "#525761",
-      "surface2": "#666c77",
       "text": "#e9eef7"
     },
     "frappe": {
       "base": "#30353e",
-      "crust": "#23272e",
       "mantle": "#292d35",
+      "crust": "#23272e",
+      "surface0": "#414650",
+      "surface1": "#515763",
+      "surface2": "#626875",
       "overlay0": "#727a88",
       "overlay1": "#818b9d",
       "overlay2": "#8f9db4",
       "subtext0": "#a0aec7",
       "subtext1": "#afc0db",
-      "surface0": "#414650",
-      "surface1": "#515763",
-      "surface2": "#626875",
       "text": "#c0d1ed"
     }
-  }
+  },
+  "git.autofetch": true
 
   //}}}
 }

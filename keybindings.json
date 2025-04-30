@@ -325,5 +325,9 @@
     "key": "ctrl+a ctrl+k",
     "command": "workbench.action.terminal.focusPreviousPane",
     "when": "terminalFocus && panelPosition != 'bottom'"
+  },
+  {
+    "key": "cmd+i",
+    "command": "composerMode.agent"
   }
 ]
