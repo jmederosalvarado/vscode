@@ -12,8 +12,18 @@
 
   "editor.fontSize": 14,
   "terminal.integrated.fontSize": 14,
+
+  "editor.lineHeight": 1.75,
   "editor.fontFamily": "Iosevka",
   "terminal.integrated.fontFamily": "Iosevka Term",
+  "scm.inputFontFamily": "Iosevka",
+  "chat.editor.fontFamily": "Iosevka",
+  "debug.console.fontFamily": "Iosevka",
+  "editor.codeLensFontFamily": "Iosevka",
+  "notebook.output.fontFamily": "Iosevka",
+  "markdown.preview.fontFamily": "Iosevka",
+  "editor.inlayHints.fontFamily": "Iosevka",
+  "editor.inlineSuggest.fontFamily": "Iosevka",
 
   "editor.fontLigatures": true,
   "terminal.integrated.fontLigatures.enabled": true,
@@ -31,17 +41,21 @@
   "editor.lineNumbers": "relative",
   "editor.renderWhitespace": "trailing",
 
+  "editor.inlayHints.enabled": "offUnlessPressed",
+
   "window.commandCenter": false,
   "editor.minimap.enabled": false,
   "editor.guides.bracketPairs": true,
 
   "terminal.integrated.shellIntegration.decorationsEnabled": "overviewRuler",
-  "terminal.integrated.defaultProfile.osx": "fish",
+  // "terminal.integrated.defaultProfile.osx": "fish",
 
   // "errorLens.enabled": true,
   // "errorLens.enabledDiagnosticLevels": ["error", "warning"],
   // "errorLens.removeLinebreaks": true,
   // "errorLens.replaceLinebreaksSymbol": " ⏎ ",
+
+  "editor.foldingImportsByDefault": true,
 
   // Editor }}}
 
@@ -68,8 +82,8 @@
     "editor.defaultFormatter": "rust-lang.rust-analyzer"
   },
   "rust-analyzer.check.command": "clippy",
-  "rust-analyzer.check.allTargets": true,
   "rust-analyzer.rustfmt.rangeFormatting.enable": true,
+  "rust-analyzer.check.workspace": false,
 
   // Go
   "[go]": {
@@ -89,17 +103,6 @@
     },
     "ui.diagnostic.staticcheck": true
   },
-
-  // Zig
-  // "zig.initialSetupDone": true,
-  // "zig.path": "/Users/jmederos/Library/Application Support/Code/User/globalStorage/ziglang.vscode-zig/zig_install/zig",
-  // "zig.path": "/Users/jmederos/Library/Application Support/Code/User/globalStorage/ziglang.vscode-zig/zig_install/zig",
-  // "zig.path": "zig",
-  // "zig.zls.path": "/Users/jmederos/Library/Application Support/Code/User/globalStorage/ziglang.vscode-zig/zls_install/zls",
-  // "zig.zls.path": "/Users/jmederos/Library/Application Support/Code/User/globalStorage/ziglang.vscode-zig/zls_install/zls",
-  // "zig.zls.path": "zls",
-  // "zig.buildOnSave": true,
-  // "zig.zls.enableBuildOnSave": true,
 
   // Lua
   // "[lua]": {
@@ -168,8 +171,8 @@
 
   // Colors {{{
 
-  "workbench.colorTheme": "Catppuccin Mocha",
-  "workbench.iconTheme": "catppuccin-mocha",
+  "workbench.colorTheme": "Catppuccin Macchiato",
+  "workbench.iconTheme": "catppuccin-macchiato",
 
   "catppuccin.extraBordersEnabled": true,
   "catppuccin.workbenchMode": "flat",
@@ -184,35 +187,129 @@
     }
   },
   "catppuccin.accentColor": "blue",
+  // Catppuccin Gruvbox
+  // "catppuccin.colorOverrides": {
+  //   "mocha": {
+  //     // Neutrals / Surfaces from Gruvbox Dark values
+  //     "base": "#32302f", // Gruvbox dark base (used directly)
+  //     "mantle": "#3c3836", // Gruvbox mantle (used directly)
+  //     "crust": "#504945", // Gruvbox crust (used directly)
+  //     "surface0": "#665c54", // Derived dark surface shade
+  //     "surface1": "#7c6f64", // Derived dark surface shade
+  //     "surface2": "#928374", // Derived dark surface shade
+  //     "overlay0": "#a89984", // Derived overlay shade
+  //     "overlay1": "#bdae93", // Derived overlay shade
+  //     "overlay2": "#d5c4a1", // Derived overlay shade
+  //     "subtext0": "#ebdbb2", // Foreground subtext derived from Gruvbox progression
+  //     "subtext1": "#fbf1c7", // Lighter subtext from Gruvbox
+  //     "text": "#fbf1c7", // Gruvbox text color (used directly)
+
+  //     // Red Group derived from Gruvbox red (#fb4934)
+  //     "rosewater": "#fb5052", // Gruvbox red lightened ~15%
+  //     "flamingo": "#fb4648", // Gruvbox red lightened ~10%
+  //     "pink": "#fb3b3e", // Gruvbox red lightened ~5%
+  //     "red": "#fb4934", // Base Gruvbox red (used directly)
+  //     "maroon": "#e22c2f", // Gruvbox red darkened ~10%
+
+  //     // Other color groups (Gruvbox direct values)
+  //     "peach": "#fe8019", // Gruvbox peach (used directly)
+  //     "yellow": "#fabd2f", // Gruvbox yellow (used directly)
+  //     "green": "#b8bb26", // Gruvbox green (used directly)
+  //     "teal": "#8ec07c", // Gruvbox teal (used directly)
+
+  //     // Blue Group derived from Gruvbox blue (#83a598)
+  //     "sky": "#89aa9d", // Gruvbox blue lightened ~5%
+  //     "lavender": "#96b3a7", // Gruvbox blue lightened ~15%
+  //     "blue": "#83a598", // Base Gruvbox blue (used directly)
+  //     "sapphire": "#769589", // Gruvbox blue darkened ~10%
+
+  //     // Purple / Mauve
+  //     "mauve": "#d3869b" // Gruvbox mauve (used directly)
+  //   },
+  //   "latte": {
+  //     // Neutrals / Surfaces from Gruvbox Light values
+  //     "base": "#fbf1c7", // Gruvbox light base (used directly)
+  //     "mantle": "#f2e5bc", // Gruvbox mantle for light (used directly)
+  //     "crust": "#e3d4b9", // Gruvbox crust for light (used directly)
+  //     "surface0": "#ebdbb2", // Derived light surface shade
+  //     "surface1": "#d5c4a1", // Derived light surface shade
+  //     "surface2": "#bdae93", // Derived light surface shade
+  //     "overlay0": "#928374", // Derived overlay (darker for light backgrounds)
+  //     "overlay1": "#7c6f64", // Derived overlay shade
+  //     "overlay2": "#665c54", // Derived overlay shade
+  //     "subtext0": "#504945", // Darker subtext (from Gruvbox progression)
+  //     "subtext1": "#3c3836", // Even darker subtext for light backgrounds
+  //     "text": "#3c3836", // Gruvbox text for light (used directly)
+
+  //     // Red Group derived from Gruvbox red for Latte (#cc241d)
+  //     "rosewater": "#d4453f", // Gruvbox latte red lightened ~15%
+  //     "flamingo": "#d13a34", // Gruvbox latte red lightened ~10%
+  //     "pink": "#cf2f28", // Gruvbox latte red lightened ~5%
+  //     "red": "#cc241d", // Base Gruvbox latte red (used directly)
+  //     "maroon": "#b8201a", // Gruvbox latte red darkened ~10%
+
+  //     // Other color groups (Gruvbox direct values for Latte)
+  //     "peach": "#d65d0e", // Gruvbox latte peach (used directly)
+  //     "yellow": "#d79921", // Gruvbox latte yellow (used directly)
+  //     "green": "#98971a", // Gruvbox latte green (used directly)
+  //     "teal": "#689d6a", // Gruvbox latte teal (used directly)
+
+  //     // Blue Group derived from Gruvbox blue for Latte (#458588)
+  //     "sky": "#4e8b8e", // Gruvbox latte blue lightened ~5%
+  //     "lavender": "#61979a", // Gruvbox latte blue lightened ~15%
+  //     "blue": "#458588", // Base Gruvbox latte blue (used directly)
+  //     "sapphire": "#3e787a", // Gruvbox latte blue darkened ~10%
+
+  //     // Purple / Mauve
+  //     "mauve": "#b16286" // Gruvbox latte mauve (used directly)
+  //   }
+  // },
+  // Catppuccin Custom
   "catppuccin.colorOverrides": {
     "latte": {
-      "base": "#d0d6e3",
-      "mantle": "#c8cfde",
-      "crust": "#bfc7d7",
-      "surface0": "#b2b9ca",
-      "surface1": "#a5abbd",
-      "surface2": "#979db0",
-      "overlay0": "#898fa3",
-      "overlay1": "#7c7f96",
-      "overlay2": "#6e7189",
-      "subtext0": "#60637a",
-      "subtext1": "#52556d",
-      "text": "#444761"
+      "base": "#fbf1c7",
+      "mantle": "#f2e5bc",
+      "crust": "#e3d4b9",
+      "surface0": "#ebdbb2",
+      "surface1": "#d5c4a1",
+      "surface2": "#bdae93",
+      "overlay0": "#928374",
+      "overlay1": "#7c6f64",
+      "overlay2": "#665c54",
+      "subtext0": "#504945",
+      "subtext1": "#3c3836",
+      "text": "#3c3836",
+
+      "rosewater": "#d4453f",
+      "flamingo": "#d13a34",
+      "pink": "#cf2f28",
+      "red": "#cc241d",
+      "maroon": "#b8201a",
+
+      "peach": "#d65d0e",
+      "yellow": "#d79921",
+      "green": "#98971a",
+      "teal": "#689d6a",
+      "sky": "#4e8b8e",
+      "lavender": "#61979a",
+      "blue": "#458588",
+      "sapphire": "#3e787a",
+      "mauve": "#b16286"
     },
     "mocha": {
       // saturated ghostty
-      //   "base": "#20242a",
-      //   "mantle": "#191c22",
-      //   "crust": "#121418",
-      //   "surface0": "#363c41",
-      //   "surface1": "#4e545e",
-      //   "surface2": "#656c77",
-      //   "overlay0": "#7d8591",
-      //   "overlay1": "#919eae",
-      //   "overlay2": "#a9b7c7",
-      //   "subtext0": "#c2cedd",
-      //   "subtext1": "#dee7f1",
-      //   "text": "#fdfeff",
+        "base": "#20242a",
+        "mantle": "#191c22",
+        "crust": "#121418",
+        "surface0": "#363c41",
+        "surface1": "#4e545e",
+        "surface2": "#656c77",
+        "overlay0": "#7d8591",
+        "overlay1": "#919eae",
+        "overlay2": "#a9b7c7",
+        "subtext0": "#c2cedd",
+        "subtext1": "#dee7f1",
+        "text": "#fdfeff",
 
       // saturated 5
       // "base": "#1d1e1f",
@@ -229,18 +326,18 @@
       // "text": "#bbc4cf",
 
       // saturated 7
-      "base": "#1d1e20",
-      "crust": "#101112",
-      "mantle": "#17181a",
-      "overlay0": "#65686b",
-      "overlay1": "#767a7f",
-      "overlay2": "#888d93",
-      "subtext0": "#979fa9",
-      "subtext1": "#a8b2bf",
-      "surface0": "#2e3031",
-      "surface1": "#414345",
-      "surface2": "#535558",
-      "text": "#b8c5d4"
+      // "base": "#1d1e20",
+      // "crust": "#101112",
+      // "mantle": "#17181a",
+      // "overlay0": "#65686b",
+      // "overlay1": "#767a7f",
+      // "overlay2": "#888d93",
+      // "subtext0": "#979fa9",
+      // "subtext1": "#a8b2bf",
+      // "surface0": "#2e3031",
+      // "surface1": "#414345",
+      // "surface2": "#535558",
+      // "text": "#b8c5d4"
 
       // saturated 10
       // "base": "#1c1e21",
@@ -257,18 +354,27 @@
       // "text": "#b2c5db"
     },
     "macchiato": {
-      "base": "#282c34",
-      "mantle": "#21242a",
-      "crust": "#1a1c21",
-      "surface0": "#3c414a",
-      "surface1": "#525761",
-      "surface2": "#666c77",
-      "overlay0": "#7c828e",
-      "overlay1": "#8f98a7",
-      "overlay2": "#a5aebe",
-      "subtext0": "#bac3d2",
-      "subtext1": "#d1d9e6",
-      "text": "#e9eef7"
+      // "base": "#282c34",
+      // "mantle": "#21242a",
+      // "crust": "#1a1c21",
+      // "surface0": "#3c414a",
+      // "surface1": "#525761",
+      // "surface2": "#666c77",
+      // "overlay0": "#7c828e",
+      // "overlay1": "#8f98a7",
+      // "overlay2": "#a5aebe",
+      // "subtext0": "#bac3d2",
+      // "subtext1": "#d1d9e6",
+      // "text": "#e9eef7"
+      "base": "#23262b",
+      "crust": "#17191c",
+      "mantle": "#1d1f24",
+      "overlay0": "#686c73",
+      "overlay1": "#787e87",
+      "overlay2": "#87909d",
+      "surface0": "#34373d",
+      "surface1": "#45494f",
+      "surface2": "#565a61"
     },
     "frappe": {
       "base": "#30353e",
@@ -285,7 +391,11 @@
       "text": "#c0d1ed"
     }
   },
-  "git.autofetch": true
+  "git.autofetch": true,
+  "solidity.telemetry": false,
+  "zig.zls.enabled": "on",
+  "symbols.hidesExplorerArrows": false,
+  "git.openRepositoryInParentFolders": "never"
 
   //}}}
 }

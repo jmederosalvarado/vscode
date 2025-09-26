@@ -1,12 +1,14 @@
 :root {
   --font-family: "Iosevka";
   --monaco-monospace-font: "Iosevka Term";
+  --markdown-font-family: "Iosevka";
   font-family: "Iosevka" !important;
 }
 
 .mac {
   font-family: var(--font-family) !important;
   --monaco-monospace-font: "Iosevka Term" !important;
+  --markdown-font-family: "Iosevka" !important;
 }
 
 body,
@@ -15,4 +17,5 @@ textarea,
 button {
   font-family: var(--font-family) !important;
   --monaco-monospace-font: "Iosevka Term" !important;
+  --markdown-font-family: "Iosevka" !important;
 }

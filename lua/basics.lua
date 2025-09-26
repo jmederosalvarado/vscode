@@ -1,0 +1,1 @@
+/Users/jmederos/.config/nvim/lua/config/basics.lua
